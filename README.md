@@ -4,7 +4,29 @@ Componente de Data-Driven Content para GitHub Pages. Sem bibliotecas externas, a
 credenciais ou dados de telemetria. Não publica nem transmite as linhas recebidas do SAS.
 As imagens externas são carregadas diretamente no navegador quando há uma URL HTTPS.
 
-## Conteúdo desta primeira versão
+## Imagens atuais
+
+Os nove circuitos agora usam as ilustrações JPG fornecidas pelo autor do projeto,
+armazenadas junto do `index.html`. Preservamos os nomes dos arquivos:
+
+| Identificador SAS | Arquivo |
+|---|---|
+| curvelo | cristais.jpg |
+| cascavel | cascavel.jpg |
+| interlagos | interlagos.jpg |
+| goiania | goiania.jpg |
+| cuiaba | mato-grosso.jpg |
+| velocitta | veloitta.jpg |
+| santa_cruz | santa-cruz.jpg |
+| brasilia | brasilia.jpg |
+| velopark | velopark.jpg |
+
+`veloitta.jpg` está com essa grafia no arquivo original; o código faz a correspondência com
+`velocitta`. Não renomeie isoladamente. Todas as imagens são exibidas sem recorte.
+Os desenhos não foram usados para validar número de curvas, homologação ou configuração de 2026.
+O antigo `brasilia.png` foi preservado, mas não é mais utilizado pelo componente.
+
+### Histórico da versão inicial
 
 - Interlagos: desenho SVG extraído do viewer HTML fornecido no projeto, incluído no próprio index.html.
 - Velocitta: referência à imagem da ficha técnica publicada por Audace Tech/Chronon, com crédito e link.
@@ -19,7 +41,8 @@ As imagens externas são carregadas diretamente no navegador quando há uma URL 
 ## Publicação no GitHub
 
 1. Crie um repositório público chamado `stock-car-circuitos`, com README.
-2. Use Add file → Upload files e envie `index.html`, `brasilia.png` e `.nojekyll` à raiz do repositório.
+2. Use Add file → Upload files e envie `index.html`, os nove arquivos JPG da tabela acima
+   e `.nojekyll` à raiz do repositório. O antigo `brasilia.png` é opcional e não é usado.
    Também pode enviar este README. Não é necessário enviar dados CSV ou o relatório JSON.
 3. Faça Commit changes.
 4. Settings → Pages → Source: Deploy from a branch → main → /(root) → Save.
